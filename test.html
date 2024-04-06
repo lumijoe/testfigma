@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+
+</head>
+<body>
+    <div class="flex flex-col bg-white">
+  <header class="flex gap-3 justify-between px-7 py-2.5 w-full text-lg bg-white text-slate-400 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/07eea6d2376f996466e0c28536adea298711d3d531b33509389458cb766da492?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Company Logo" class="shrink-0 my-auto max-w-full aspect-[2.44] w-[146px]" />
+    <nav class="flex gap-5 justify-between items-center p-5 max-md:flex-wrap max-md:pl-5">
+      <a href="#" class="self-stretch my-auto text-center text-indigo-500">Flights</a>
+      <a href="#" class="self-stretch my-auto text-center">Hotels</a>
+      <a href="#" class="self-stretch my-auto text-center">Packages</a>
+      <a href="#" class="self-stretch my-auto text-center">Sign in</a>
+      <a href="#" class="justify-center self-stretch px-6 py-3.5 bg-indigo-500 rounded text-neutral-50 max-md:px-5">Sign up</a>
+    </nav>
+  </header>
+  
+  <main class="self-center mt-16 w-full max-w-[1390px] max-md:mt-10 max-md:max-w-full">
+    <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+      <section class="flex flex-col w-[65%] max-md:ml-0 max-md:w-full">
+        <div class="flex flex-col px-5 max-md:mt-10 max-md:max-w-full">
+          <h1 class="text-3xl font-bold text-indigo-500 max-md:max-w-full">Passenger information</h1>
+          <p class="mt-7 text-xl text-slate-400 max-md:max-w-full">Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
+          
+          <h2 class="mt-12 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Passenger 1 (Adult)</h2>
+          
+          <div class="flex gap-5 mt-8 text-xl whitespace-nowrap max-md:flex-wrap max-md:pr-5">
+            <input type="text" value="Sophia" class="justify-center px-3.5 py-2.5 text-black bg-white rounded border border-solid border-slate-400" />
+            <input type="text" placeholder="Middle" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400 text-slate-400" />
+            <input type="text" value="Knowles" class="justify-center px-3.5 py-2.5 text-gray-700 bg-white rounded border border-solid border-slate-400" />
+          </div>
+          
+          <div class="flex gap-5 justify-between self-start mt-7 whitespace-nowrap max-md:flex-wrap">
+            <input type="text" placeholder="Suffix" class="justify-center self-start px-3.5 py-2.5 text-xl bg-white rounded border border-solid border-slate-400 text-slate-400" />
+            <div class="flex flex-col py-px">
+              <input type="text" value="11/11/1989" class="justify-center px-3.5 py-2.5 text-xl text-gray-700 bg-white rounded border border-solid border-slate-400" />
+              <span class="mt-2 text-sm text-slate-400">MM/DD/YY</span>
+            </div>
+          </div>
+          
+          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 whitespace-nowrap max-md:flex-wrap">
+            <input type="email" value="sophiaknowles89@tripma.com" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
+            <input type="tel" value="123-456-7890" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
+          </div>
+          
+          <div class="flex gap-5 justify-between mt-7 text-xl max-md:flex-wrap">
+            <input type="text" placeholder="Redress number" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400 text-slate-400" />
+            <input type="text" value="123456789" class="justify-center px-3.5 py-2.5 text-gray-700 whitespace-nowrap bg-white rounded border border-solid border-slate-400" />
+          </div>
+          
+          <h2 class="mt-16 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Emergency contact information</h2>
+          
+          <label class="flex gap-2.5 justify-between self-start py-1 mt-8 text-lg text-slate-500">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b0c713e55920615b02d3ce04b4d2980935925fadfe5b3f5e573f61d6758d150?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Checkbox" class="shrink-0 my-auto aspect-square w-[17px]" />
+            <span>Same as Passenger 1</span>
+            <input type="checkbox" class="sr-only" />
+          </label>
+          
+          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 whitespace-nowrap max-md:flex-wrap">
+            <input type="text" value="Sophia" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
+            <input type="text" value="Knowles" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
+          </div>
+          
+          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 max-md:flex-wrap">
+            <input type="email" placeholder="Email address*" class="justify-center px-3.5 py-2.5 underline bg-white rounded border border-solid border-slate-400" />
+            <input type="tel" value="123-456-7890" class="justify-center px-3.5 py-2.5 whitespace-nowrap bg-white rounded border border-solid border-slate-400" />
+          </div>
+          
+          <h2 class="mt-14 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Bag information</h2>
+          <p class="mt-6 text-xl text-indigo-500 max-md:max-w-full">Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the <a href="#" class="text-indigo-500">full bag policy</a>.</p>
+          
+          <div class="flex gap-5 mt-12 max-w-full text-xl w-[515px] max-md:flex-wrap max-md:mt-10">
+            <div class="flex flex-col flex-1 self-start font-semibold">
+              <span class="text-slate-400">Passenger 1</span>
+              <span class="mt-7 text-slate-500">Sophia Knowles</span>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="font-semibold text-slate-400">Checked bags</span>
+              <div class="flex gap-5 justify-between mt-3.5 text-center whitespace-nowrap text-slate-500">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff671e54293b20d3e47603af1c11c74d6762ea4aa3f9a34675357ca2f05f13ab?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Minus" class="shrink-0 w-9 aspect-square" />
+                <span class="my-auto">1</span>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/130109fe0a0e92dfcb166b788e6efeda108a699ac8743b32a080aa3fd3e7d37a?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Plus" class="shrink-0 w-9 aspect-square" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex gap-5 justify-between self-start mt-20 text-lg max-md:mt-10">
+            <button class="justify-center px-6 py-3.5 text-indigo-500 rounded border border-indigo-500 border-solid max-md:px-5">Save and close</button>
+            <button class="justify-center px-6 py-3.5 bg-indigo-500 rounded text-neutral-50 max-md:px-5">Select seats</button>
+          </div>
+        </div>
+      </section>
+      
+      <aside class="flex flex-col ml-5 w-[35%] max-md:ml-0 max-md:w-full">
+        <div class="flex flex-col grow mt-48 max-md:mt-10 max-md:max-w-full">
+          <div class="flex flex-col px-4 py-5 bg-white rounded-xl border border-violet-100 border-solid max-md:max-w-full">
+            <div class="flex gap-2 items-start p-2.5 text-lg">
+              <img loading="lazy" src="./assets/images/image_25.png" alt="Airline Logo" class="shrink-0 aspect-square w-[45px]" />
+              <div class="flex flex-col flex-1">
+                <span class="text-slate-800">Hawaiian Airlines</span>
+                <span class="mt-1.5 text-slate-400">FIG4312</span>
+              </div>
+              <div class="flex flex-col flex-1 self-stretch text-right text-slate-800">
+                <span>16h 45m (+1d)</span>
+                <span class="mt-1.5">7:00 AM - 4:15 PM</span>
+                <span class="mt-1 text-slate-400">2h 45m in HNL</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center py-1 mt-2.5 bg-white">
+              <hr class="shrink-0 h-0.5 bg-violet-100" />
+            </div>
+            <div class="flex gap-2 items-start p-2.5 mt-2.5 text-lg">
+              <img loading="lazy" src="./assets/images/image_25.png" alt="Airline Logo" class="shrink-0 aspect-[1.02] w-[45px]" />
+              <div class="flex flex-col flex-1">
+                <span class="text-slate-800">Hawaiian Airlines</span>
+                <span class="mt-1 text-slate-400">FIG4312</span>
+              </div>
+              <div class="flex flex-col flex-1 self-stretch text-right text-slate-800">
+                <span>16h 45m (+1d)</span>
+                <span class="mt-1">7:00 AM - 4:15 PM</span>
+                <span class="mt-1.5 text-slate-400">2h 45m in HNL</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex gap-5 justify-between self-end p-5 text-lg font-semibold text-right text-slate-800 max-md:pr-5">
+            <div class="flex flex-col">
+              <span>Subtotal</span>
+              <span class="mt-2.5">Taxes and Fees</span>
+              <span class="mt-2.5">Total</span>
+            </div>
+            <div class="flex flex-col whitespace-nowrap">
+              <span>$503</span>
+              <span class="mt-2.5">$121</span>
+              <span class="mt-2.5">$624</span>
+            </div>
+          </div>
+          
+          <button class="justify-center self-end px-6 py-3.5 mt-10 text-lg bg-indigo-500 rounded text-neutral-50 max-md:px-5">Select seats</button>
+          
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba73cd8d5f45c4e5e9504fa745cc7728a421c4db7881436b3b08ec4897cfe027?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Ad" class="self-start mt-28 ml-5 w-full aspect-[0.74] max-md:mt-10 max-md:max-w-full" />
+        </div>
+      </aside>
+    </div>
+  </main>
+  
+  
+            <footer class="flex flex-col py-4 mt-16 w-full bg-white max-md:mt-10 max-md:max-w-full">
+                <section class="flex flex-col justify-between items-center px-16 pt-16 pb-7 w-full text-lg text-slate-400 max-md:px-5 max-md:max-w-full">
+                  <div class="flex gap-5 justify-between items-start px-0.5 w-full max-w-[1334px] max-md:flex-wrap max-md:max-w-full">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4e15524f42d286933d490e9ea75df1f58e09c7901e36e0f1019c5a4d9deae1c?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Company logo" class="shrink-0 max-w-full aspect-[2.44] w-[145px]" />
+                    <nav class="flex flex-col py-5 pr-5 pl-1.5 max-md:pr-5">
+                      <h3 class="text-xl font-bold text-slate-500">About</h3>
+                      <a href="#" class="mt-4">About Tripma</a>
+                      <a href="#" class="mt-5">How it works</a>
+                      <a href="#" class="mt-5">Careers</a>
+                      <a href="#" class="mt-5">Press</a>
+                      <a href="#" class="mt-4">Blog</a>
+                      <a href="#" class="mt-5">Forum</a>
+                    </nav>
+                    <nav class="flex flex-col self-stretch py-5 pr-5 pl-1.5 max-md:pr-5">
+                      <h3 class="text-xl font-bold text-slate-500">Partner with us</h3>
+                      <a href="#" class="mt-4">Partnership programs</a>
+                      <a href="#" class="mt-5">Affiliate program</a>
+                      <a href="#" class="mt-5">Connectivity partners</a>
+                      <a href="#" class="mt-5">Promotions and events</a>
+                      <a href="#" class="mt-4">Integrations</a>
+                      <a href="#" class="mt-5">Community</a>
+                      <a href="#" class="mt-5">Loyalty program</a>
+                    </nav>
+                    <nav class="flex flex-col py-5 pr-5 pl-1.5 max-md:pr-5">
+                      <h3 class="text-xl font-bold text-slate-500">Support</h3>
+                      <a href="#" class="mt-4">Help Center</a>
+                      <a href="#" class="mt-5">Contact us</a>
+                      <a href="#" class="mt-5">Privacy policy</a>
+                      <a href="#" class="mt-5">Terms of service</a>
+                      <a href="#" class="mt-4">Trust and safety</a>
+                      <a href="#" class="mt-5">Accessibility</a>
+                    </nav>
+                    <div class="flex flex-col items-start">
+                      <nav class="flex flex-col self-stretch py-5 pl-1.5">
+                        <h3 class="text-xl font-bold text-slate-500">Get the app</h3>
+                        <a href="#" class="mt-4">Tripma for Android</a>
+                        <a href="#" class="mt-5">Tripma for iOS</a>
+                        <a href="#" class="mt-5">Mobile site</a>
+                      </nav>
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1dc346b87cffcbeee510eb45081bb01a17bbb4b5663c21c52ff87edf2695291c?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Google Play Store badge" class="mt-3.5 max-w-full  aspect-[3.33] border-neutral-400 w-[150px]" />
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/346b81e62a0c70e5ddd3142a2d39137cdd5c49fc1b40e34abf79434b11b37ec0?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Apple App Store badge" class="mt-3.5 max-w-full aspect-[3.33] w-[150px]" />
+                    </div>
+                  </div>
+                </section>
+                <hr class="mt-5 w-full border border-solid border-slate-300 stroke-[1.11px] stroke-slate-300 max-md:max-w-full" />
+                <section class="flex justify-center items-center px-16 py-3.5 mt-5 w-full max-md:px-5 max-md:max-w-full">
+                  <div class="flex gap-5 justify-between w-full max-w-[1334px] max-md:flex-wrap max-md:max-w-full">
+                    <div class="flex gap-5 justify-between p-2.5">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eea5168dc736ae4bff1b04c9a0071384d9da38d0b073e54db0a178c4ba6b99e?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Facebook icon" class="shrink-0 aspect-square w-[26px]" />
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aae01423fba5b0234a4780851a55a9a6eb004f63d173321de686738d9b8fb1c7?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Twitter icon" class="shrink-0 aspect-[1.04] w-[27px]" />
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d6f2195386cd5fd4dce3d210d3c649778510b451ba8e49e93bc5067e6ab5bbb?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Instagram icon" class="shrink-0 aspect-[1.04] w-[27px]" />
+                    </div>
+                    <p class="my-auto text-xl text-right text-slate-400">© 2020 Tripma incorporated</p>
+                  </div>
+                </section>
+              </footer>
+</body>
+</html>

@@ -1,0 +1,559 @@
+@charset "utf-8";
+  .container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    gap: 11px;
+    font-size: 18px;
+    color: #7c8db0;
+    font-weight: 400;
+    padding: 9px 27px;
+  }
+
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+
+  .logo {
+    width: 146px;
+    max-width: 100%;
+    margin: auto 0;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: space-between;
+    padding: 18px;
+  }
+
+  @media (max-width: 991px) {
+    .nav {
+      flex-wrap: wrap;
+      padding-left: 20px;
+    }
+  }
+
+  .nav-item {
+    text-align: center;
+    font-family: Nunito Sans, sans-serif;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .nav-item-active {
+    color: #605dec;
+  }
+
+  .signup-btn {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    background-color: #605dec;
+    align-self: stretch;
+    color: #fafafa;
+    justify-content: center;
+    padding: 13px 22px;
+  }
+
+  @media (max-width: 991px) {
+    .signup-btn {
+      padding: 0 20px;
+    }
+  }
+
+  .main-content {
+    align-self: center;
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1390px;
+  }
+
+  @media (max-width: 991px) {
+    .main-content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 65%;
+    margin-left: 0px;
+  }
+
+  @media (max-width: 991px) {
+    .col-left {
+      width: 100%;
+    }
+  }
+
+  .passenger-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-info {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .passenger-info-title {
+    color: #605dec;
+    font: 700 27px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-info-title {
+      max-width: 100%;
+    }
+  }
+
+  .passenger-info-description {
+    color: #7c8db0;
+    margin-top: 28px;
+    font: 400 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-info-description {
+      max-width: 100%;
+    }
+  }
+
+  .passenger-title {
+    color: #6e7491;
+    margin-top: 50px;
+    font: 600 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-title {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .passenger-name {
+    display: flex;
+    margin-top: 31px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-name {
+      flex-wrap: wrap;
+      padding-right: 20px;
+      white-space: initial;
+    }
+  }
+
+  .passenger-name-input {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-name-input {
+      white-space: initial;
+    }
+  }
+
+  .passenger-name-middle {
+    color: #7c8db0;
+  }
+
+  .passenger-name-last {
+    color: #36374a;
+  }
+
+  .passenger-suffix {
+    align-self: start;
+    display: flex;
+    margin-top: 27px;
+    gap: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-suffix {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .passenger-suffix-input {
+    align-self: start;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    color: #7c8db0;
+    justify-content: center;
+    padding: 9px 13px;
+    font: 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-suffix-input {
+      white-space: initial;
+    }
+  }
+
+  .passenger-dob {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 0;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-dob {
+      white-space: initial;
+    }
+  }
+
+  .passenger-dob-input {
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    color: #36374a;
+    justify-content: center;
+    padding: 9px 13px;
+    font: 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-dob-input {
+      white-space: initial;
+    }
+  }
+
+  .passenger-dob-format {
+    color: #7c8db0;
+    margin-top: 7px;
+    font: 13px Nunito Sans, sans-serif;
+  }
+
+  .passenger-contact {
+    display: flex;
+    margin-top: 26px;
+    gap: 20px;
+    font-size: 20px;
+    color: #36374a;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-contact {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .passenger-contact-input {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-contact-input {
+      white-space initial;
+    }
+  }
+
+  .passenger-redress {
+    display: flex;
+    margin-top: 26px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-redress {
+      flex-wrap: wrap;
+    }
+  }
+
+  .passenger-redress-label {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    color: #7c8db0;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  .passenger-redress-input {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    color: #36374a;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-redress-input {
+      white-space: initial;
+    }
+  }
+
+  .emergency-contact-title {
+    color: #6e7491;
+    margin-top: 60px;
+    font: 600 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .emergency-contact-title {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .emergency-contact-same {
+    align-self: start;
+    display: flex;
+    margin-top: 30px;
+    gap: 9px;
+    font-size: 18px;
+    color: #6e7491;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  .emergency-contact-same-icon {
+    width: 17px;
+    margin: auto 0;
+  }
+
+  .emergency-contact-same-label {
+    font-family: Nunito Sans, sans-serif;
+  }
+
+  .emergency-contact-name {
+    display: flex;
+    margin-top: 27px;
+    gap: 20px;
+    font-size: 20px;
+    color: #36374a;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .emergency-contact-name {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .emergency-contact-name-input {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  @media (max-width: 991px) {
+    .emergency-contact-name-input {
+      white-space: initial;
+    }
+  }
+
+  .emergency-contact-info {
+    display: flex;
+    margin-top: 27px;
+    gap: 20px;
+    font-size: 20px;
+    color: #36374a;
+    font-weight: 400;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .emergency-contact-info {
+      flex-wrap: wrap;
+    }
+  }
+
+  .emergency-contact-email {
+    font-family: Nunito Sans, sans-serif;
+    text-decoration-line: underline;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  .emergency-contact-phone {
+    font-family: Nunito Sans, sans-serif;
+    border-radius: 4.439px;
+    border: 1px solid #a1b0cc;
+    background-color: #fff;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 9px 13px;
+  }
+
+  @media (max-width: 991px) {
+    .emergency-contact-phone {
+      white-space: initial;
+    }
+  }
+
+  .bag-info-title {
+    color: #6e7491;
+    margin-top: 59px;
+    font: 600 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .bag-info-title {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .bag-info-description {
+    color: #605dec;
+    margin-top: 22px;
+    font: 400 20px Nunito Sans, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .bag-info-description {
+      max-width: 100%;
+    }
+  }
+
+  .bag-info-policy-link {
+    color: #605dec;
+  }
+
+  .passenger-bag-info {
+    display: flex;
+    margin-top: 51px;
+    width: 515px;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-bag-info {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .passenger-bag-info-left {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .passenger-bag-info-number {
+    color: #7c8db0;
+    font-family: Nunito Sans, sans-serif;
+  }
+
+  .passenger-bag-info-name {
+    color: #6e7491;
+    font-family: Nunito Sans, sans-serif;
+    margin-top: 27px;
+  }
+
+  .passenger-bag-info-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .passenger-bag-info-label {
+    color: #7c8db0;
+    font-family: Nunito Sans, sans-serif;
+    font-weight: 600;
+  }
+
+  .passenger-bag-info-details {
+    display: flex;
+    margin-top: 14px;
+    gap: 20px;
+    color: #6e7491;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .passenger-bag-info-details {
+      white-space: initial;
+    }
+  }
+
+  .passenger-bag-info-icon {
+    width: 36px;
+  }
+
+  .passenger-bag-info-count {
+    font-family: Nunito Sans, sans-serif;
+    margin: auto 0
