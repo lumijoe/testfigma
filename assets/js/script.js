@@ -1,7 +1,7 @@
 // slideup, slidedown
 // デモテストアラート
 $(function() {
-    // alert('デモテスト用です(' + String.fromCharCode(169) + 'ikkosha.co.jp)');
+    alert('デモテスト用です(' + String.fromCharCode(169) + 'ikkosha.co.jp)');
 
     $(window).scroll(function() {
         
