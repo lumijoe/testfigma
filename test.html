@@ -4,213 +4,389 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- css -->
-    <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-
-    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
-
 </head>
 <body>
     <div class="flex flex-col bg-white">
-  <header class="flex gap-3 justify-between px-7 py-2.5 w-full text-lg bg-white text-slate-400 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/07eea6d2376f996466e0c28536adea298711d3d531b33509389458cb766da492?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Company Logo" class="shrink-0 my-auto max-w-full aspect-[2.44] w-[146px]" />
-    <nav class="flex gap-5 justify-between items-center p-5 max-md:flex-wrap max-md:pl-5">
-      <a href="#" class="self-stretch my-auto text-center text-indigo-500">Flights</a>
-      <a href="#" class="self-stretch my-auto text-center">Hotels</a>
-      <a href="#" class="self-stretch my-auto text-center">Packages</a>
-      <a href="#" class="self-stretch my-auto text-center">Sign in</a>
-      <a href="#" class="justify-center self-stretch px-6 py-3.5 bg-indigo-500 rounded text-neutral-50 max-md:px-5">Sign up</a>
-    </nav>
-  </header>
-  
-  <main class="self-center mt-16 w-full max-w-[1390px] max-md:mt-10 max-md:max-w-full">
-    <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-      <section class="flex flex-col w-[65%] max-md:ml-0 max-md:w-full">
-        <div class="flex flex-col px-5 max-md:mt-10 max-md:max-w-full">
-          <h1 class="text-3xl font-bold text-indigo-500 max-md:max-w-full">Passenger information</h1>
-          <p class="mt-7 text-xl text-slate-400 max-md:max-w-full">Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
-          
-          <h2 class="mt-12 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Passenger 1 (Adult)</h2>
-          
-          <div class="flex gap-5 mt-8 text-xl whitespace-nowrap max-md:flex-wrap max-md:pr-5">
-            <input type="text" value="Sophia" class="justify-center px-3.5 py-2.5 text-black bg-white rounded border border-solid border-slate-400" />
-            <input type="text" placeholder="Middle" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400 text-slate-400" />
-            <input type="text" value="Knowles" class="justify-center px-3.5 py-2.5 text-gray-700 bg-white rounded border border-solid border-slate-400" />
-          </div>
-          
-          <div class="flex gap-5 justify-between self-start mt-7 whitespace-nowrap max-md:flex-wrap">
-            <input type="text" placeholder="Suffix" class="justify-center self-start px-3.5 py-2.5 text-xl bg-white rounded border border-solid border-slate-400 text-slate-400" />
-            <div class="flex flex-col py-px">
-              <input type="text" value="11/11/1989" class="justify-center px-3.5 py-2.5 text-xl text-gray-700 bg-white rounded border border-solid border-slate-400" />
-              <span class="mt-2 text-sm text-slate-400">MM/DD/YY</span>
+        <header class="flex flex-col justify-center px-16 pt-1.5 pb-px w-full text-base border-b border-solid border-zinc-100 max-md:px-5 max-md:max-w-full">
+          <div class="flex gap-0 justify-between mx-3 max-md:flex-wrap max-md:mr-2.5">
+            <div class="flex gap-5 justify-between py-1.5 text-center font-[350] text-neutral-900 max-md:flex-wrap max-md:max-w-full">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5216ddf73e5afc532798789e16c5d21b314fb5b015d90c7d6947d8910bb355e?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Company logo" class="shrink-0 w-40 max-w-full aspect-[2.63]" />
+              <nav class="flex gap-5 py-0.5 pr-20 my-auto max-md:flex-wrap">
+                <a href="#" class="flex gap-1 justify-center py-px rounded-[32px]">
+                  <span>PICK UP</span>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9710f9f82f7f05686e6e5c3bfcbf0be49a20f387c25a729bb8c3906b7b8fc48f?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1 w-4 aspect-square" />
+                </a>
+                <a href="#" class="flex gap-1 justify-center py-px whitespace-nowrap rounded-[32px]">
+                  <span>NEWS</span>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9710f9f82f7f05686e6e5c3bfcbf0be49a20f387c25a729bb8c3906b7b8fc48f?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1 w-4 aspect-square" />
+                </a>
+                <a href="#" class="flex gap-0 justify-between py-px whitespace-nowrap rounded-[32px]">
+                  <span>事業所</span>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9710f9f82f7f05686e6e5c3bfcbf0be49a20f387c25a729bb8c3906b7b8fc48f?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1 w-4 aspect-square" />
+                </a>
+                <a href="#" class="flex gap-0 justify-between py-px whitespace-nowrap rounded-[32px]">
+                  <span>グループ会社</span>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9710f9f82f7f05686e6e5c3bfcbf0be49a20f387c25a729bb8c3906b7b8fc48f?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1 w-4 aspect-square" />
+                </a>
+                <a href="#" class="flex flex-wrap gap-1 justify-center content-center self-start text-xs font-thin leading-5 whitespace-nowrap rounded-[32px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8933f62738db3c2e691d4cd5450bdb69cd705add4f3ef55aaf6f482e1396db6?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto w-3.5 aspect-square" />
+                  <span>Search</span>
+                </a>
+              </nav>
+            </div>
+            <div class="flex gap-3 self-start mt-3.5 whitespace-nowrap">
+              <a href="#" class="flex-wrap justify-center content-center px-9 py-2.5 border-2 border-solid border-neutral-900 font-[350] rounded-[32px] text-neutral-900 max-md:px-5">
+                カタログ
+              </a>
+              <a href="#" class="flex-wrap justify-center content-center px-9 py-2.5 font-bold text-center text-white bg-orange-400 rounded-[32px] max-md:px-5">
+                お問い合わせ一覧
+              </a>
             </div>
           </div>
-          
-          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 whitespace-nowrap max-md:flex-wrap">
-            <input type="email" value="sophiaknowles89@tripma.com" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
-            <input type="tel" value="123-456-7890" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
-          </div>
-          
-          <div class="flex gap-5 justify-between mt-7 text-xl max-md:flex-wrap">
-            <input type="text" placeholder="Redress number" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400 text-slate-400" />
-            <input type="text" value="123456789" class="justify-center px-3.5 py-2.5 text-gray-700 whitespace-nowrap bg-white rounded border border-solid border-slate-400" />
-          </div>
-          
-          <h2 class="mt-16 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Emergency contact information</h2>
-          
-          <label class="flex gap-2.5 justify-between self-start py-1 mt-8 text-lg text-slate-500">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b0c713e55920615b02d3ce04b4d2980935925fadfe5b3f5e573f61d6758d150?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Checkbox" class="shrink-0 my-auto aspect-square w-[17px]" />
-            <span>Same as Passenger 1</span>
-            <input type="checkbox" class="sr-only" />
-          </label>
-          
-          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 whitespace-nowrap max-md:flex-wrap">
-            <input type="text" value="Sophia" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
-            <input type="text" value="Knowles" class="justify-center px-3.5 py-2.5 bg-white rounded border border-solid border-slate-400" />
-          </div>
-          
-          <div class="flex gap-5 justify-between mt-7 text-xl text-gray-700 max-md:flex-wrap">
-            <input type="email" placeholder="Email address*" class="justify-center px-3.5 py-2.5 underline bg-white rounded border border-solid border-slate-400" />
-            <input type="tel" value="123-456-7890" class="justify-center px-3.5 py-2.5 whitespace-nowrap bg-white rounded border border-solid border-slate-400" />
-          </div>
-          
-          <h2 class="mt-14 text-xl font-semibold text-slate-500 max-md:mt-10 max-md:max-w-full">Bag information</h2>
-          <p class="mt-6 text-xl text-indigo-500 max-md:max-w-full">Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the <a href="#" class="text-indigo-500">full bag policy</a>.</p>
-          
-          <div class="flex gap-5 mt-12 max-w-full text-xl w-[515px] max-md:flex-wrap max-md:mt-10">
-            <div class="flex flex-col flex-1 self-start font-semibold">
-              <span class="text-slate-400">Passenger 1</span>
-              <span class="mt-7 text-slate-500">Sophia Knowles</span>
+        </header>
+        <nav class="flex justify-center items-center px-5 pt-4 pb-5 w-full text-center bg-indigo-950 max-md:max-w-full">
+          <div class="flex gap-5 justify-between items-start py-0.5 max-md:flex-wrap">
+            <div class="flex flex-col justify-center py-px">
+              <h2 class="text-xl font-medium leading-8 text-white">製品・サービス</h2>
+              <p class="text-sm font-bold leading-5 text-orange-400">Products / Services</p>
             </div>
-            <div class="flex flex-col flex-1">
-              <span class="font-semibold text-slate-400">Checked bags</span>
-              <div class="flex gap-5 justify-between mt-3.5 text-center whitespace-nowrap text-slate-500">
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff671e54293b20d3e47603af1c11c74d6762ea4aa3f9a34675357ca2f05f13ab?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Minus" class="shrink-0 w-9 aspect-square" />
-                <span class="my-auto">1</span>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/130109fe0a0e92dfcb166b788e6efeda108a699ac8743b32a080aa3fd3e7d37a?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Plus" class="shrink-0 w-9 aspect-square" />
+            <div class="flex flex-col justify-center self-stretch py-px">
+              <h2 class="self-center text-xl font-medium leading-8 text-white">研究開発・技術</h2>
+              <p class="text-sm font-bold leading-6 text-orange-400">Development / Technology</p>
+            </div>
+            <div class="flex flex-col justify-center py-px whitespace-nowrap">
+              <h2 class="text-xl font-medium leading-8 text-white">企業情報</h2>
+              <p class="text-sm font-bold leading-5 text-orange-400">Company</p>
+            </div>
+            <div class="flex flex-col justify-center py-px whitespace-nowrap">
+              <h2 class="text-xl font-medium leading-8 text-white">株主・投資家情報</h2>
+              <p class="self-center text-sm font-bold leading-5 text-orange-400">IR</p>
+            </div>
+            <div class="flex flex-col justify-center py-px whitespace-nowrap">
+              <h2 class="text-xl font-medium leading-8 text-white">ESG・サステナビリティ</h2>
+              <p class="text-sm font-bold leading-5 text-orange-400">ESG・Sustainability</p>
+            </div>
+          </div>
+        </nav>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/baf0ab3feba4a7963ed3a16c456269cc0627ca73c6168adcac47737b8782ac17?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Main banner image" class="w-full aspect-[1.47] max-md:max-w-full" />
+        <section class="self-center mt-16 w-full max-w-[1341px] max-md:mt-10 max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/af1b88f87cc97ab1c9ef1e4d98427418d5941b8fddd6787d2c64246aa62b2a06?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Left image" class="grow w-full aspect-[1.41] max-md:mt-10 max-md:max-w-full" />
+            </div>
+            <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/af1b88f87cc97ab1c9ef1e4d98427418d5941b8fddd6787d2c64246aa62b2a06?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Right image" class="grow w-full aspect-[1.41] max-md:mt-10 max-md:max-w-full" />
+            </div>
+          </div>
+        </section>
+        <hr class="shrink-0 self-center mt-16 max-w-full h-px border-t border-gray-200 border-solid w-[1040px] max-md:mt-10" />
+        <section class="flex justify-center items-center px-16 pt-5 pb-1.5 w-full bg-white max-md:px-5 max-md:max-w-full">
+          <div class="max-w-full w-[1040px] max-md:pr-5">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div class="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col self-stretch pr-5 pb-6 my-auto text-3xl font-medium leading-8 text-black max-w-[460px] max-md:mt-10 max-md:max-w-full">
+                  <h2 class="max-md:max-w-full">How does the technology</h2>
+                  <h2 class="max-md:max-w-full">integration work?</h2>
+                  <ol class="mt-5 text-lg leading-6 max-md:max-w-full">
+                    <li>Your developers build the integration using our API documentation</li>
+                    <li>You provide customer support</li>
+                    <li>We support you by providing partner support surrounding high-level queries</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c86b2074a510d4504a26d6c19ff316220b811fbb16bf5a7a18ed4024bee66e5b?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Technology integration image" class="grow self-stretch w-full aspect-[1.04] max-w-[349px] max-md:mt-10" />
               </div>
             </div>
           </div>
-          
-          <div class="flex gap-5 justify-between self-start mt-20 text-lg max-md:mt-10">
-            <button class="justify-center px-6 py-3.5 text-indigo-500 rounded border border-indigo-500 border-solid max-md:px-5">Save and close</button>
-            <button class="justify-center px-6 py-3.5 bg-indigo-500 rounded text-neutral-50 max-md:px-5">Select seats</button>
+        </section>
+        <section class="flex justify-center items-center px-16 pt-20 w-full bg-neutral-100 max-md:px-5 max-md:max-w-full">
+          <div class="flex flex-col px-6 mt-10 w-full max-w-[1088px] max-md:px-5 max-md:max-w-full">
+            <h2 class="mx-6 text-5xl font-medium tracking-normal leading-10 text-center text-black max-md:mr-2.5 max-md:max-w-full">
+              Why build your own payroll solution when you can <br />
+              integrate with us?
+            </h2>
+            <div class="mt-16 max-md:pr-5 max-md:mt-10 max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c2208a430b221b9353681d1fad26e5a2b44dc6f88a2f702ef43682a0c19f2c9?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Open API image" class="self-stretch w-full aspect-square max-w-[460px] max-md:max-w-full" />
+                </div>
+                <div class="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col items-start self-stretch pb-6 pl-20 my-auto text-black max-w-[554px] max-md:mt-10 max-md:max-w-full">
+                    <h3 class="text-3xl font-medium leading-8 max-md:max-w-full">Open API</h3>
+                    <p class="mt-5 text-lg leading-6 max-md:max-w-full">
+                      Our open API is easy to work with. We're here to help and <br />
+                      support you through the integration process. Browse some <br />
+                      of our integration partners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+        <section class="flex justify-center items-center px-16 w-full bg-neutral-100 max-md:px-5 max-md:max-w-full">
+          <div class="max-w-full w-[1040px] max-md:pr-5">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col self-stretch pb-6 my-auto text-black max-w-[460px] max-md:mt-10 max-md:max-w-full">
+                  <h3 class="text-3xl font-medium leading-8 max-md:max-w-full">Improve customer experience</h3>
+                  <p class="mt-5 text-lg leading-6 max-md:max-w-full">
+                    If your customers are still importing Excel spreadsheets <br />
+                    into their payroll system from your app, the user <br />
+                    experience has to change. Create the most seamless <br />
+                    and automated process with essential functionality such <br />
+                    as comprehensive rostering and automated timesheets <br />
+                    and pay runs.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6159107b86ac668f4b7b247079d103b215f1dd42287252ccaa5b4deaf52c36b?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Customer experience image" class="self-stretch w-full aspect-square max-w-[460px] max-md:mt-10 max-md:max-w-full" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex justify-center items-center px-16 w-full bg-neutral-100 max-md:px-5 max-md:max-w-full">
+          <div class="max-w-full w-[1040px] max-md:pr-5">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div class="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ea82457d50d376aa93ba3f388207910fdda2b3e8c8afd9b54dd1596ccf164e7?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Compliance support image" class="self-stretch w-full aspect-square max-w-[460px] max-md:max-w-full" />
+              </div>
+              <div class="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col items-start self-stretch pb-6 pl-20 my-auto text-black max-w-[554px] max-md:mt-10 max-md:max-w-full">
+                  <h3 class="text-3xl font-medium leading-8 max-md:max-w-full">Support with compliance</h3>
+                  <p class="mt-5 text-lg leading-6 max-md:max-w-full">
+                    Australian payroll compliance is complex, with over 120 <br />
+                    modern awards, Single Touch Payroll, and ever-evolving <br />
+                    legislation and tax changes. By integrating with Australia's <br />
+                    best payroll software, you'll gain trust from your <br />
+                    customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="flex justify-center items-center px-16 py-20 mt-32 w-full bg-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div class="flex flex-col px-6 w-full max-w-[1088px] max-md:px-5 max-md:max-w-full">
+            <h2 class="text-5xl font-medium tracking-normal leading-10 text-center text-black max-md:max-w-full">
+            Here's why our technology integration partners love us.
+            </h2>
+            <nav class="flex justify-center items-center px-16 mt-16 text-lg leading-6 text-center text-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <ul class="flex gap-5 justify-between max-md:flex-wrap">
+                <li class="justify-center pt-1 pb-1.5 font-thin border-b-2 border-black border-solid">
+                Partner dashboard
+                </li>
+                <li>Branded payroll</li>
+                <li>Bureau dashboard</li>
+                <li>Partner support</li>
+            </ul>
+            </nav>
+            <div class="flex flex-col justify-center mt-16 bg-white max-md:mt-10 max-md:max-w-full">
+            <div class="max-md:max-w-full">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <figure class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/142c4cbb9bc843cd525b6046b5a8cef88aef4ae074bfcf84901b0d4c06eab69a?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Partner dashboard" class="grow self-stretch w-full aspect-[1.15] max-w-[520px] max-md:max-w-full" />
+                </figure>
+                <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow self-stretch px-20 py-20 text-black max-md:px-5 max-md:max-w-full">
+                    <h3 class="mt-3 text-3xl font-medium tracking-normal leading-8 max-md:mr-2.5">
+                        Partner dashboard
+                    </h3>
+                    <p class="mt-5 text-lg tracking-tight leading-7 max-md:mr-2.5">
+                        Provide a more tailored experience to each <br />
+                        customer with features such as audit trails, <br />
+                        restore deleted settings, extract insights into <br />
+                        client activity and watch your business grow.
+                    </p>
+                    <a href="#" class="flex-wrap justify-center content-center self-start px-8 py-4 mt-9 text-base font-thin border-2 border-black border-solid rounded-[32px] max-md:px-5">
+                        Learn more
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-      </section>
-      
-      <aside class="flex flex-col ml-5 w-[35%] max-md:ml-0 max-md:w-full">
-        <div class="flex flex-col grow mt-48 max-md:mt-10 max-md:max-w-full">
-          <div class="flex flex-col px-4 py-5 bg-white rounded-xl border border-violet-100 border-solid max-md:max-w-full">
-            <div class="flex gap-2 items-start p-2.5 text-lg">
-              <img loading="lazy" src="./assets/images/image_25.png" alt="Airline Logo" class="shrink-0 aspect-square w-[45px]" />
-              <div class="flex flex-col flex-1">
-                <span class="text-slate-800">Hawaiian Airlines</span>
-                <span class="mt-1.5 text-slate-400">FIG4312</span>
-              </div>
-              <div class="flex flex-col flex-1 self-stretch text-right text-slate-800">
-                <span>16h 45m (+1d)</span>
-                <span class="mt-1.5">7:00 AM - 4:15 PM</span>
-                <span class="mt-1 text-slate-400">2h 45m in HNL</span>
-              </div>
-            </div>
-            <div class="flex flex-col justify-center py-1 mt-2.5 bg-white">
-              <hr class="shrink-0 h-0.5 bg-violet-100" />
-            </div>
-            <div class="flex gap-2 items-start p-2.5 mt-2.5 text-lg">
-              <img loading="lazy" src="./assets/images/image_25.png" alt="Airline Logo" class="shrink-0 aspect-[1.02] w-[45px]" />
-              <div class="flex flex-col flex-1">
-                <span class="text-slate-800">Hawaiian Airlines</span>
-                <span class="mt-1 text-slate-400">FIG4312</span>
-              </div>
-              <div class="flex flex-col flex-1 self-stretch text-right text-slate-800">
-                <span>16h 45m (+1d)</span>
-                <span class="mt-1">7:00 AM - 4:15 PM</span>
-                <span class="mt-1.5 text-slate-400">2h 45m in HNL</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="flex gap-5 justify-between self-end p-5 text-lg font-semibold text-right text-slate-800 max-md:pr-5">
-            <div class="flex flex-col">
-              <span>Subtotal</span>
-              <span class="mt-2.5">Taxes and Fees</span>
-              <span class="mt-2.5">Total</span>
-            </div>
-            <div class="flex flex-col whitespace-nowrap">
-              <span>$503</span>
-              <span class="mt-2.5">$121</span>
-              <span class="mt-2.5">$624</span>
-            </div>
-          </div>
-          
-          <button class="justify-center self-end px-6 py-3.5 mt-10 text-lg bg-indigo-500 rounded text-neutral-50 max-md:px-5">Select seats</button>
-          
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba73cd8d5f45c4e5e9504fa745cc7728a421c4db7881436b3b08ec4897cfe027?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Ad" class="self-start mt-28 ml-5 w-full aspect-[0.74] max-md:mt-10 max-md:max-w-full" />
-        </div>
-      </aside>
-    </div>
-  </main>
-  
-  
-            <footer class="flex flex-col py-4 mt-16 w-full bg-white max-md:mt-10 max-md:max-w-full">
-                <section class="flex flex-col justify-between items-center px-16 pt-16 pb-7 w-full text-lg text-slate-400 max-md:px-5 max-md:max-w-full">
-                  <div class="flex gap-5 justify-between items-start px-0.5 w-full max-w-[1334px] max-md:flex-wrap max-md:max-w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4e15524f42d286933d490e9ea75df1f58e09c7901e36e0f1019c5a4d9deae1c?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Company logo" class="shrink-0 max-w-full aspect-[2.44] w-[145px]" />
-                    <nav class="flex flex-col py-5 pr-5 pl-1.5 max-md:pr-5">
-                      <h3 class="text-xl font-bold text-slate-500">About</h3>
-                      <a href="#" class="mt-4">About Tripma</a>
-                      <a href="#" class="mt-5">How it works</a>
-                      <a href="#" class="mt-5">Careers</a>
-                      <a href="#" class="mt-5">Press</a>
-                      <a href="#" class="mt-4">Blog</a>
-                      <a href="#" class="mt-5">Forum</a>
-                    </nav>
-                    <nav class="flex flex-col self-stretch py-5 pr-5 pl-1.5 max-md:pr-5">
-                      <h3 class="text-xl font-bold text-slate-500">Partner with us</h3>
-                      <a href="#" class="mt-4">Partnership programs</a>
-                      <a href="#" class="mt-5">Affiliate program</a>
-                      <a href="#" class="mt-5">Connectivity partners</a>
-                      <a href="#" class="mt-5">Promotions and events</a>
-                      <a href="#" class="mt-4">Integrations</a>
-                      <a href="#" class="mt-5">Community</a>
-                      <a href="#" class="mt-5">Loyalty program</a>
-                    </nav>
-                    <nav class="flex flex-col py-5 pr-5 pl-1.5 max-md:pr-5">
-                      <h3 class="text-xl font-bold text-slate-500">Support</h3>
-                      <a href="#" class="mt-4">Help Center</a>
-                      <a href="#" class="mt-5">Contact us</a>
-                      <a href="#" class="mt-5">Privacy policy</a>
-                      <a href="#" class="mt-5">Terms of service</a>
-                      <a href="#" class="mt-4">Trust and safety</a>
-                      <a href="#" class="mt-5">Accessibility</a>
-                    </nav>
-                    <div class="flex flex-col items-start">
-                      <nav class="flex flex-col self-stretch py-5 pl-1.5">
-                        <h3 class="text-xl font-bold text-slate-500">Get the app</h3>
-                        <a href="#" class="mt-4">Tripma for Android</a>
-                        <a href="#" class="mt-5">Tripma for iOS</a>
-                        <a href="#" class="mt-5">Mobile site</a>
-                      </nav>
-                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1dc346b87cffcbeee510eb45081bb01a17bbb4b5663c21c52ff87edf2695291c?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Google Play Store badge" class="mt-3.5 max-w-full  aspect-[3.33] border-neutral-400 w-[150px]" />
-                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/346b81e62a0c70e5ddd3142a2d39137cdd5c49fc1b40e34abf79434b11b37ec0?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Apple App Store badge" class="mt-3.5 max-w-full aspect-[3.33] w-[150px]" />
+        </section>
+
+        <div class="flex flex-col items-center pb-14 w-full bg-gray-100 max-md:max-w-full">
+            <div class="flex flex-col justify-center px-3 pt-16 pb-8 w-full mix-blend-darken max-w-[1088px] max-md:max-w-full">
+              <nav class="flex gap-5 justify-between items-start px-px pb-20 text-sm leading-5 whitespace-nowrap text-neutral-800 max-md:flex-wrap max-md:max-w-full">
+                <div class="flex flex-col py-px max-w-[152px]">
+                  <h3 class="text-base font-bold leading-6 text-black">製品・サービス</h3>
+                  <a href="#" class="mt-6">次世代バーナ</a>
+                  <a href="#" class="mt-3">燃焼制御機器</a>
+                  <a href="#" class="mt-3">部品・素材熱処理炉</a>
+                  <a href="#" class="mt-3 leading-5">鉄鋼・非鉄金属プラント</a>
+                  <a href="#" class="mt-3 leading-5">基板・フィルム塗工乾燥装置</a>
+                  <a href="#" class="mt-3">大気浄化装置</a>
+                  <a href="#" class="mt-3 leading-5">キルン・汚泥焼却設備</a>
+                </div>
+                <div class="flex flex-col py-px">
+                  <h3 class="text-base font-bold leading-6 text-black">研究開発・技術</h3>
+                  <a href="#" class="mt-6">研究領域</a>
+                  <a href="#" class="mt-3">大学共同研究実績</a>
+                  <a href="#" class="mt-3">受託テスト一覧</a>
+                  <a href="#" class="mt-3.5">技術一覧</a>
+                </div>
+                <div class="flex flex-col pb-9">
+                  <h3 class="text-base font-bold leading-6 text-black">企業情報</h3>
+                  <a href="#" class="mt-6">トップメッセージ</a>
+                  <a href="#" class="mt-3">会社概要・沿革</a>
+                  <a href="#" class="mt-3">経営理念</a>
+                  <a href="#" class="mt-3">組織図</a>
+                  <a href="#" class="mt-3">グループ会社</a>
+                </div>
+                <div class="flex flex-col py-px">
+                  <h3 class="text-base font-bold leading-6 text-black">株主・投資家情報</h3>
+                  <a href="#" class="mt-6 max-md:mr-0.5">経営方針</a>
+                  <a href="#" class="mt-3 max-md:mr-0.5">業績・財務情報</a>
+                  <a href="#" class="mt-3 max-md:mr-0.5">株式・債券情報</a>
+                  <a href="#" class="mt-3 max-md:mr-0.5">IR情報</a>
+                  <a href="#" class="mt-3 max-md:mr-0.5">個人投資家の皆様へ</a>
+                </div>
+                <div class="flex flex-col py-px max-w-[152px]">
+                  <h3 class="text-base font-bold leading-6 text-black">ESG・サスティナビリティ</h3>
+                  <a href="#" class="mt-6">CSR報告書</a>
+                  <a href="#" class="mt-3">サスティナビリティ</a>
+                  <a href="#" class="mt-3">ESGデータ</a>
+                  <a href="#" class="mt-3 leading-5">イニシアチブ・外部評価</a>
+                  <a href="#" class="mt-3">環境</a>
+                  <a href="#" class="mt-3">社会</a>
+                  <a href="#" class="mt-3">ガバナンス</a>
+                </div>
+                <div class="flex flex-col max-w-[152px]">
+                  <h3 class="text-base font-thin leading-6 text-black">Connect</h3>
+                  <a href="#" class="flex gap-2 justify-between mt-6">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/017ad7431cc878e15fff9b32a1ffa42999ae5ac98867286ee49116a4b2d190fe?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1.5 w-2 aspect-[0.53]" />
+                    <span>Facebook</span>
+                  </a>
+                  <a href="#" class="flex gap-2 mt-2">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/95b1c8c5aa7b5a45ee40935324a8c6034e13264500fd4ddbda805deb31f4b426?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1.5 aspect-square w-[15px]" />
+                    <span>Twitter</span>
+                  </a>
+                  <a href="#" class="flex gap-2 py-px mt-2">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/50da3147467b2fa995d70d44cc61eab42109bef928225cc0b3b096792883cd74?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-[0.93] w-[15px]" />
+                    <span>Instagram</span>
+                  </a>
+                  <a href="#" class="flex gap-2 py-px mt-2">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca25e28a7ebe7d045203ba59ed655ff6db738a251957307dc812df60f15c3e91?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-[0.93] w-[15px]" />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="#" class="flex gap-2 py-px mt-2">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7df27d4bf7a9eb42a1bd4f02f7cde3f1ed42210d48e1c01a071cda31340cc81b?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-square w-[15px]" />
+                    <span>YouTube</span>
+                  </a>
+                </div>
+              </nav>
+              <div class="max-md:pr-5 max-md:max-w-full">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col self-stretch py-0.5 text-base font-bold leading-6 text-black max-md:mt-10">
+                      <a href="#">PICK UP</a>
+                      <a href="#">ニュースリリース</a>
+                      <a href="#" class="max-w-[128px]">個人情報保護方針</a>
                     </div>
                   </div>
-                </section>
-                <hr class="mt-5 w-full border border-solid border-slate-300 stroke-[1.11px] stroke-slate-300 max-md:max-w-full" />
-                <section class="flex justify-center items-center px-16 py-3.5 mt-5 w-full max-md:px-5 max-md:max-w-full">
-                  <div class="flex gap-5 justify-between w-full max-w-[1334px] max-md:flex-wrap max-md:max-w-full">
-                    <div class="flex gap-5 justify-between p-2.5">
-                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eea5168dc736ae4bff1b04c9a0071384d9da38d0b073e54db0a178c4ba6b99e?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Facebook icon" class="shrink-0 aspect-square w-[26px]" />
-                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aae01423fba5b0234a4780851a55a9a6eb004f63d173321de686738d9b8fb1c7?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Twitter icon" class="shrink-0 aspect-[1.04] w-[27px]" />
-                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d6f2195386cd5fd4dce3d210d3c649778510b451ba8e49e93bc5067e6ab5bbb?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="Instagram icon" class="shrink-0 aspect-[1.04] w-[27px]" />
+                  <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col self-stretch py-px text-sm leading-5 whitespace-nowrap text-neutral-800 max-md:mt-10">
+                      <h3 class="text-base font-bold leading-6 text-black">お問い合わせ一覧</h3>
+                      <a href="#" class="mt-6">〇〇について</a>
+                      <a href="#" class="mt-3">〇〇について</a>
+                      <a href="#" class="mt-3">〇〇について</a>
+                      <a href="#" class="mt-3.5">〇〇について</a>
                     </div>
-                    <p class="my-auto text-xl text-right text-slate-400">© 2020 Tripma incorporated</p>
                   </div>
-                </section>
+                  <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow self-stretch pb-16 text-sm leading-5 whitespace-nowrap text-neutral-800 max-md:mt-10">
+                      <h3 class="text-base font-bold leading-6 text-black">採用情報</h3>
+                      <a href="#" class="mt-6 max-md:mr-0.5">〇〇情報</a>
+                      <a href="#" class="mt-3 max-md:mr-0.5">〇〇情報</a>
+                      <a href="#" class="mt-3 max-md:mr-0.5">中外炉の人々</a>
+                      <a href="#" class="mt-3 max-md:mr-0.5">データで見る中外炉</a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col self-stretch text-sm leading-5 whitespace-nowrap max-w-[152px] text-neutral-800 max-md:mt-10">
+                      <h3 class="text-base font-thin leading-6 text-black">Connect</h3>
+                      <a href="#" class="flex gap-2 justify-between mt-6">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c17e1855b92302a56ea571b7c80594503c243e32c31f9a782d0385d224e9751?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1.5 w-2 aspect-[0.53]" />
+                        <span>Facebook</span>
+                      </a>
+                      <a href="#" class="flex gap-2 mt-2">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce0b4f7d7cb64045887eda676829e4156e8d19f86c9d188d03caeb5f2bbf78a6?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 self-start mt-1.5 aspect-square w-[15px]" />
+                        <span>Twitter</span>
+                      </a>
+                      <a href="#" class="flex gap-2 py-px mt-2">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/02a51e33a788ac2af39c01c809734d7b66c7f2c8591047a9e313cb2ef8be36c7?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-[0.93] w-[15px]" />
+                        <span>Instagram</span>
+                      </a>
+                      <a href="#" class="flex gap-2 py-px mt-2">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/449fd1927598eb0857b178a46b099d10841cba1e7e558c250e6bcd51614afc43?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-[0.93] w-[15px]" />
+                        <span>LinkedIn</span>
+                      </a>
+                      <a href="#" class="flex gap-2 py-px mt-2">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8d734af8a689bf4cd0fd51f67e370aba510467ae9517f393d6432c45e2e14f3?apiKey=38f7627b5364403abcba366dc95bc6e8&" alt="" class="shrink-0 my-auto aspect-square w-[15px]" />
+                        <span>YouTube</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center self-stretch px-16 pb-14 mt-12 w-full bg-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <div class="pt-12 pb-14 w-full border-t border-b border-solid border-zinc-100 max-w-[1040px] max-md:max-w-full">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow self-stretch pb-8 text-base leading-6 text-black max-md:mt-10 max-md:max-w-full">
+                      <h3 class="font-thin max-md:max-w-full">Acknowledgement of Country</h3>
+                      <p class="mt-7 max-md:mr-2 max-md:max-w-full">We acknowledge Aboriginal and Torres Strait Islander peoples as</p>
+                      <p class="max-md:mr-2 max-md:max-w-full">the First Australians and Traditional Custodians of the lands where</p>
+                      <p class="max-md:mr-2 max-md:max-w-full">we live, learn and work.</p>
+                      <h3 class="font-bold max-md:mr-2 max-md:max-w-full">What we do</h3>
+                      <p class="mr-7 max-md:mr-2.5 max-md:max-w-full">Employment Hero is an end-to-end HR, payroll and recruitment</p>
+                      <p class="max-md:mr-2 max-md:max-w-full">solution designed for Australian businesses. Our suite of powerful</p>
+                      <p class="max-md:mr-2 max-md:max-w-full">employment tools help streamline your workday, so you can focus</p>
+                      <p class="max-md:mr-2 max-md:max-w-full">on what matters.</p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow self-stretch text-base max-md:mt-10 max-md:max-w-full">
+                      <p class="font-thin text-black leading-[150%] max-md:max-w-full">News, resources and insights - delivered to your inbox. Subscribe.</p>
+                      <form>
+                        <label for="workEmail" class="sr-only">Work email</label>
+                        <input type="email" id="workEmail" placeholder="Work email" aria-label="Work email" class="justify-center pt-2.5 pb-3 mt-7 bg-white border-b-2 border-solid border-neutral-200 text-zinc-500 max-md:max-w-full" />
+                        <div class="flex gap-4 mt-12 text-sm leading-5 text-neutral-800 max-md:flex-wrap max-md:mt-10">
+                          <input type="checkbox" id="privacyCheck" class="shrink-0 self-start w-4 h-4 bg-white border border-violet-700 border-solid" />
+                          <label for="privacyCheck" class="max-md:max-w-full">By checking this box, you agree to the processing of data in accordance <br /> with Employment Hero's <a href="#" class="text-neutral-800">Privacy Policy</a>.</label>
+                        </div>
+                        <div class="flex gap-4 mt-5 text-sm leading-5 text-neutral-800 max-md:flex-wrap">
+                          <input type="checkbox" id="marketingCheck" class="shrink-0 self-start w-4 h-4 bg-white border border-violet-700 border-solid" />
+                          <label for="marketingCheck" class="max-md:max-w-full">I consent to receiving marketing communications, promotions/offers and <br /> content from <a href="#" class="text-neutral-800">the Employment Hero Group</a> by email, text (including <br /> WhatsApp), and social media channels about its products, services or <br /> brands.</label>
+                        </div>
+                        <button type="submit" class="flex-wrap justify-center content-center self-start px-8 py-2.5 mt-5 font-thin text-center text-white whitespace-nowrap bg-violet-700 rounded-[32px] max-md:px-5">Subscribe</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer>
+                <nav class="flex gap-5 justify-between px-5 pt-0.5 pb-1 mt-16 text-xs leading-5 text-neutral-500 max-md:flex-wrap max-md:mt-10">
+                  <a href="#">Trust &amp; Legal Centre</a>
+                  <a href="#">Terms &amp; Conditions</a> 
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Cookie Policy</a>
+                  <a href="#">Data Processing Addendum</a>
+                  <a href="#">Financial Disclosure Documents</a>
+                </nav>
               </footer>
+    
 </body>
 </html>
